@@ -6,7 +6,11 @@ import { GiHamburger } from 'react-icons/gi';
 import { IoAppsSharp } from 'react-icons/io5';
 
 function Navbar() {
-  return <div id="name">Navbar</div>;
+  return (
+    <div className="flex justify-between item-center px-14 h-14 bg-[#212121] opacity-96 sticky top-0 z-50">
+      Hello World
+    </div>
+  );
 }
 
 export default Navbar;

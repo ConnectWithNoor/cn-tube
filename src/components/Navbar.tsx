@@ -6,7 +6,7 @@ import { GiHamburger } from 'react-icons/gi';
 import { IoAppsSharp } from 'react-icons/io5';
 
 function Navbar() {
-  return <div abc='123'>Navbar</div>;
+  return <div>Navbar</div>;
 }
 
 export default Navbar;

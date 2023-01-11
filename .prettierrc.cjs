@@ -9,7 +9,8 @@ module.exports = {
   quoteProps: 'as-needed',
   proseWrap: 'preserve',
   printWidth: 80,
-  endOfLine: 'if',
+  endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
-  arrowParens: 'always'
+  arrowParens: 'always',
+  formatOnSave: 'true',
 };

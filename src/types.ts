@@ -11,6 +11,7 @@ export interface HomePageVideos {
   videoId: string;
   videoTitle: string;
   videoDescription: string;
+  videoThumbnail: string;
   videoLink: string;
   videoDuration: string;
   videoViews: string;

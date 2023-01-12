@@ -25,6 +25,8 @@ module.exports = {
     'import/no-cycle': 'off',
     'no-nested-ternary': 'off',
     'no-param-reassign': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-console': 'off',
   },
   settings: {
     react: {

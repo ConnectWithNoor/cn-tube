@@ -6,16 +6,16 @@ import { RootState } from '../index';
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_DATA_API_KEY;
 
-export const getHomePageVideos = createAsyncThunk(
-  'cn-tube/homepageVideos',
+export const getSearchPageVideos = createAsyncThunk(
+  'cn-tube/searchPageVideos',
   async (isNext: boolean, { getState }) => {
     const {
-      'cn-tube': { nextPageToken: nextPageTokenFromState, videos },
+      'cn-tube': { nextPageToken: nextPageTokenFromState, videos, searchTerm },
     } = getState() as RootState;
     const {
       data: { items, nextPageToken },
     } = await axios.get(
-      `${YOUTUBE_API_URL}/search?maxResults=20&q="trending now"&key=${API_KEY}&part=snippet&type=video&${
+      `${YOUTUBE_API_URL}/search?q=${searchTerm}&key=${API_KEY}&part=snippet&type=video&${
         isNext ? `pageToken=${nextPageTokenFromState}` : ''
       }`
     );

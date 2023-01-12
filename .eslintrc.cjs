@@ -20,7 +20,11 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'jsx-a11y/anchor-is-valid': 0,
+    'jsx-a11y/anchor-is-valid': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-cycle': 'off',
+    'no-nested-ternary': 'off',
+    'no-param-reassign': 'off',
   },
   settings: {
     react: {

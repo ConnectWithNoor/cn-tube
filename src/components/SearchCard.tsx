@@ -23,12 +23,14 @@ function SearchCard({ data }: SearchCardProps) {
       </div>
       <div className="flex gap-1 flex-col">
         <div className="max w-2xl">
-          <a
-            href="#"
-            className="line-clamp-2"
-          >
-            {data.videoTitle}
-          </a>
+          <h3>
+            <a
+              href="#"
+              className="line-clamp-2"
+            >
+              {data.videoTitle}
+            </a>
+          </h3>
           <h3>
             <div className="text-xs text-gray-400 ">
               <div>
@@ -36,7 +38,7 @@ function SearchCard({ data }: SearchCardProps) {
                   <span className="after:content-['•'] after:mx-1">
                     {data.videoViews} views
                   </span>
-                  <span>{data.videoAge}</span>
+                  <span>{data.videoAge} ago</span>
                 </div>
               </div>
             </div>

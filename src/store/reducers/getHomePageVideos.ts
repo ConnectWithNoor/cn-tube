@@ -7,7 +7,7 @@ import { RootState } from '../index';
 const API_KEY = import.meta.env.VITE_YOUTUBE_DATA_API_KEY;
 
 export const getHomePageVideos = createAsyncThunk(
-  'cn-tube/homepageVideos',
+  'cn-tube/getHomePageVideos',
   async (isNext: boolean, { getState }) => {
     const {
       'cn-tube': { nextPageToken: nextPageTokenFromState, videos },

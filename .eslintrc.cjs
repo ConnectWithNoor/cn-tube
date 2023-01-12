@@ -20,7 +20,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'eslint-disable jsx-quotes': 0,
+    'jsx-a11y/anchor-is-valid': 0,
   },
   settings: {
     react: {
